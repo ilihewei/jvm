@@ -22,6 +22,8 @@ class SingleTon{
 
 
     /**
+     *
+     * 准备阶段和初始化阶段的重要意义
      * 分两步
      * 第一：singleTon=null；
      * 第二：new SingleTon（）进行执行构造方法
