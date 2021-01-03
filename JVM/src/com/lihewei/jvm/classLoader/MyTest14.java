@@ -7,6 +7,9 @@ import java.util.Enumeration;
 
 
 /**
+ *
+ * https://blog.csdn.net/u010312474/article/details/91046318
+ *
  * 获得当前的类ClasLoader
  * clazz.getClassLoader()
  * 获得当前线程上下文的ClassLoader
@@ -15,6 +18,14 @@ import java.util.Enumeration;
  *  ClassLoader.getSystemClassLoader()
  *  获得调用者的classloader
  *  DriverManager.getCallerClassLoader()
+ *
+ *
+ *
+ *  Class objects for array classes are not created by class loaders,
+ *  but are created automatically as required by the Java runtime.
+ *  The class loader for an array class, as returned by Class.getClassLoader()
+ *  is the same as the class loader for its element type; if the element type is a primitive type,
+ *  then the array class has no class loader.
  */
 public class MyTest14 {
     public static void main(String[] args) throws IOException {
