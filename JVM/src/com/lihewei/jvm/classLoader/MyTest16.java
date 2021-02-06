@@ -2,6 +2,14 @@ package com.lihewei.jvm.classLoader;
 
 import java.io.*;
 
+/**
+ * 1.JVM 规范允许类加载器在预料某个类将要被使用时就预先加载它，
+ * 如果在预先加载的过程中遇到了.class 文件缺失或存在错误，
+ * 类加载器必须在程序首次主动使用该类时才报告错误(LinkageError错误)
+ *
+ * 2.如果这个类一直没有被程序主动使用，那么类加载器就不会报告错误。
+ *
+ */
 public class MyTest16 extends ClassLoader {
 
     private String classLoaderName;
